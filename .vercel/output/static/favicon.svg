@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Maximize Your Freedom">
+  <rect width="32" height="32" rx="7" fill="#071311"/>
+  <rect x="5" y="13" width="22" height="3" rx="1.5" fill="#d7c4a2"/>
+  <rect x="8" y="19" width="16" height="2" rx="1" fill="#d7c4a2" opacity="0.48"/>
+</svg>

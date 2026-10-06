@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/fraunces/500.css";
+@import "@fontsource/fraunces/600.css";
+@import "@fontsource/noto-sans-devanagari/400.css";
+@import "@fontsource/noto-sans-devanagari/500.css";
+
+@theme {
+  --color-bg: #071311;
+  --color-fg: #e8f3ee;
+  --color-muted: #8ea89f;
+  --color-accent: #d7c4a2;
+  --color-ink: #04100e;
+  --font-sans: "Outfit", "Noto Sans Devanagari", sans-serif;
+  --font-serif: "Fraunces", "Noto Sans Devanagari", serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.wash {
+  background:
+    radial-gradient(
+      80% 46% at 8% -8%,
+      color-mix(in srgb, var(--color-accent) 16%, var(--color-bg)),
+      transparent 68%
+    ),
+    var(--color-bg);
+}
+
+.glass {
+  background: color-mix(in srgb, white 7%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, white 12%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 16%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

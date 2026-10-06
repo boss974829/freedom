@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Maximize Your Freedom",
+      "hasCanvas": false,
+      "bodyTextLen": 4747,
+      "bodyTextHash": "6904690aea8d3e1a9a3d8237dca652f51b6be60164a6b2bd5a78ce67e2e8921f",
+      "bodyTextPrefix": "A COURSE IN DEEP LIVING Maximize Your Freedom 63 talks by Rajpal",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Maximize Your Freedom",
+      "hasCanvas": false,
+      "bodyTextLen": 1592,
+      "bodyTextHash": "bca475cdd55ef92d6c57b61439e77f0657035d4cec9c3b7389be822075a68f71",
+      "bodyTextPrefix": "A COURSE IN DEEP LIVING Maximize Your Freedom 63 talks by Rajpal",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

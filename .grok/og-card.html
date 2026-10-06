@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Maximize Your Freedom</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #071311;
+  }
+  body {
+    font-family: "Liberation Serif", "FreeSerif", "DejaVu Serif", serif;
+    color: #e8f3ee;
+  }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    background:
+      radial-gradient(ellipse 55% 42% at 50% 38%, rgba(215, 196, 162, 0.16), transparent 62%),
+      radial-gradient(ellipse 90% 55% at 50% 108%, #0c2420 0%, transparent 58%),
+      linear-gradient(180deg, #0d221e 0%, #071311 46%, #040c0b 100%);
+  }
+  .grain {
+    position: absolute;
+    inset: 0;
+    opacity: 0.18;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>");
+    mix-blend-mode: overlay;
+  }
+  .moon {
+    position: absolute;
+    left: 50%;
+    top: 56px;
+    width: 42px;
+    height: 42px;
+    margin-left: -21px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 36%, #f3ead8 0%, #d7c4a2 46%, #a89068 100%);
+    box-shadow: 0 0 42px 8px rgba(215, 196, 162, 0.26);
+  }
+  .streak {
+    position: absolute;
+    left: 50%;
+    top: 430px;
+    width: 3px;
+    height: 160px;
+    margin-left: -1.5px;
+    background: linear-gradient(180deg,
+      rgba(215, 196, 162, 0.45) 0%,
+      rgba(215, 196, 162, 0.12) 55%,
+      rgba(215, 196, 162, 0) 100%);
+  }
+  .ripple {
+    position: absolute;
+    left: 50%;
+    border: 1px solid rgba(215, 196, 162, 0.22);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .r1 { top: 468px; width: 260px; height: 56px; }
+  .r2 { top: 468px; width: 440px; height: 92px; opacity: 0.7; }
+  .r3 { top: 468px; width: 680px; height: 140px; opacity: 0.4; }
+  .horizon {
+    position: absolute;
+    left: 140px;
+    right: 140px;
+    top: 468px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(215, 196, 162, 0.65), transparent);
+  }
+  .lockup {
+    position: absolute;
+    left: 160px;
+    right: 160px;
+    top: 148px;
+    text-align: center;
+  }
+  .line1 {
+    font-size: 34px;
+    letter-spacing: 0.46em;
+    color: #d7c4a2;
+    text-indent: 0.46em;
+    font-weight: 400;
+  }
+  .line2 {
+    margin-top: 8px;
+    font-size: 96px;
+    line-height: 0.92;
+    letter-spacing: 0.035em;
+    font-weight: 400;
+    color: #e8f3ee;
+    text-shadow: 0 10px 28px rgba(4, 12, 11, 0.65);
+  }
+  .tag {
+    margin-top: 28px;
+    font-family: "Liberation Sans", "DejaVu Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    text-indent: 0.28em;
+    color: #d7c4a2;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="grain"></div>
+    <div class="moon"></div>
+    <div class="streak"></div>
+    <div class="ripple r1"></div>
+    <div class="ripple r2"></div>
+    <div class="ripple r3"></div>
+    <div class="horizon"></div>
+    <div class="lockup">
+      <p class="line1"><span>MAXIMIZE</span></p>
+      <p class="line2"><span>YOUR FREEDOM</span></p>
+      <p class="tag"><span>A course in living freely</span></p>
+    </div>
+  </div>
+</body>
+</html>
